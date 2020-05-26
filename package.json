@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sonvh2510/01.ToolBuildHTML.git"
+    "url": "git+https://github.com/hoangdev1808/americandoor.git"
   },
-  "author": "sonvh2510",
+  "author": "hoangdev1808",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonvh2510/01.ToolBuildHTML/issues"
+    "url": "https://github.com/hoangdev1808/americandoor.git"
   },
-  "homepage": "https://github.com/sonvh2510/01.ToolBuildHTML#readme",
+  "homepage": "https://github.com/hoangdev1808/americandoor#readme",
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
