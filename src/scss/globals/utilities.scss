@@ -42,3 +42,89 @@
 		filter: blur(0);
 	}
 }
+.block-section{
+	float: left;
+	width: 100%;
+	position: relative;
+	padding-bottom: 50px;
+}
+.block-title {
+	h3 {
+		display  : inline-block;
+		font-size: 2rem;
+	}
+
+	time {
+		display: block;
+	}
+
+	&.line-center-90 {
+		h3 {
+			position      : relative;
+			padding-bottom: 5px;
+
+			&:after {
+				content   : '';
+				position  : absolute;
+				left      : 50%;
+				bottom    : 0;
+				transform : translateX(-50%);
+				background: #E4B354;
+				width     : 115px;
+				height    : 3px;
+			}
+		}
+	}
+
+	&.line-center-50 {
+		h3 {
+			position      : relative;
+			padding-bottom: 5px;
+
+			&:after {
+				content   : '';
+				position  : absolute;
+				left      : 50%;
+				bottom    : 0;
+				transform : translateX(-50%);
+				background: #E4B354;
+				width     : 115px;
+				height    : 5px;
+			}
+		}
+	}
+
+	&.line-left-50 {
+		h3 {
+			position      : relative;
+			padding-bottom: 5px;
+
+			&:after {
+				content   : '';
+				position  : absolute;
+				left      : 0;
+				bottom    : 0;
+				background: #E4B354;
+				width     : 122px;
+				height    : 3px;
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.icon-title {
+			img {
+				width : 30px;
+				height: auto;
+			}
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		p {
+			font-size: 10px;
+		}
+	}
+}

@@ -1,15 +1,15 @@
 {
 	"fonts": [
-		"src/fonts/**",
-		"bower_components/mdi/fonts/**",
-		"bower_components/font-awesome/webfonts/**",
-		"bower_components/linearicons/dist/web-font/fonts/**"
+		"src/fonts/**"
 	],
 	"js": [
 		"bower_components/jquery/dist/jquery.js",
-		"bower_components/swiper/package/js/swiper.js"
+		"bower_components/bootstrap/dist/js/bootstrap.min.js",
+		"bower_components/swiper/package/js/swiper.js",
+		"bower_components/font-awesome-5/js-packages/@fortawesome/fontawesome-free/js/all.min.js"
 	],
 	"css": [
-		"bower_components/swiper/package/css/swiper.css"
+		"bower_components/swiper/package/css/swiper.css",
+		"bower_components/bootstrap/dist/css/bootstrap.min.css"
 	]
 }
