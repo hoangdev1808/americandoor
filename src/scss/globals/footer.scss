@@ -73,6 +73,12 @@ footer{
 					}
 				}
 			}
+			@media(max-width: 768.98px){
+				margin-top: 15px !important;
+			}
+		}
+		@media(max-width: 768.98px){
+			padding: 1.5rem 0;
 		}
 	}
 	.copyright{

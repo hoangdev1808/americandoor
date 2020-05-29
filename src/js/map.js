@@ -10,7 +10,7 @@ if (mapSelector) {
 				'featureType': 'administrative',
 				'elementType': 'labels.text.fill',
 				'stylers': [{
-					'color': '#444444',
+					'color': '#d7d7d7',
 				}, ],
 			},
 			{

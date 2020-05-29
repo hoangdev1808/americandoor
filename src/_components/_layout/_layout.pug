@@ -20,7 +20,7 @@ html(lang="en")
 				span#progstat 0
 				| %
 			#progress
-		//- main content
+		//- Header block start
 		block header
 			include _header.pug
 		main
@@ -29,6 +29,7 @@ html(lang="en")
 			#js-page-verify(class=bodyClass hidden)
 		block footer
 			include _footer.pug
+			include _feedback
 		script(type="text/javascript", src="./js/core.min.js")
 		script(type="text/javascript", src="./js/main.min.js")
 		block scripts

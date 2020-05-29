@@ -8,6 +8,9 @@
 	.about-left{
 		display: flex;
 		align-items: center;
+		@media(max-width: 1024px){
+			margin-bottom: 1rem;
+		}
 	}
 	.about__content{
 		.about__title{
@@ -26,6 +29,9 @@
 					left: 0;
 					background-color: #ff0000;
 				}
+				@media(max-width: 1024px){
+					font-size: 1rem;
+				}
 			}
 		}
 		.about__description{
@@ -36,10 +42,24 @@
 				color: #747474;
 				font-size: 1rem;
 			}
+			@media(max-width: 1024px){
+				padding-left: 0;
+				p{
+					font-size: .9rem;
+				}
+			}
 		}
 	}
 	.about__down{
 		padding-left: 2rem;
+		@media(max-width: 1024px){
+			padding-left: 0;
+		}
+		@media(max-width: 768.98px){
+			.btn__readmore{
+				margin-left: .3rem !important;
+			}
+		}
 	}
 
 	.about__item{
@@ -63,10 +83,14 @@
 				width: 100%;
 				p{
 					color: #fff;
-					font-size: 1.1rem;
+					font-size: 1rem;
 					font-weight: 600;
 				}
 			}
+		}
+		@media(max-width: 1024px){
+			margin-bottom: 1rem;
+			padding: 1rem;
 		}
 	}
 }
