@@ -85,10 +85,39 @@ function hightlightSlide(){
 		},
 	});
 }
+function ajaxForm() {
+	$('form button card__body').on('click', function(e) {
+		e.preventDefault();
+		const url = $(this).attr('data-url');
+		const name = $('#name').val();
+		const phone = $('#phone').val();
+		const email = $('#email').val();
+		const content = $('#content').val();
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: {
+				url: url,
+				name: name,
+				phone: phone,
+				email: email,
+				content: content
+			},
+			success: function(res) {
+				if (res.Code === 200) {
+					alert('Thành công');
+				} else {
+					alert('Thất bại');
+				}
+			}
+		});
+	});
+}
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	bannerHomeSile();
 	collectionSlide();
 	productHomeSlide();
 	hightlightSlide();
+	ajaxForm();
 });

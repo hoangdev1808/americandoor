@@ -74,10 +74,10 @@ footer
 						h3 Đăng ký nhận bản tin
 					.card__body
 						p Đăng ký để nhận được những thông tin về sản phẩm và khuyến mãi mới nhất
-						form(action="", method="post")
+						form.form-email(action="")
 							.form-group
-								input.form-control(type="email" placeholder="Đăng ký nhận bản tin...")
-								a.btn.btn__send(href="")
+								input.form-control#email(type="text" placeholder="Đăng ký nhận bản tin..." name="email")
+								button.btn.btn__send(data-url="")
 									i.fas.fa-arrow-right
 					.card__media
 						ul
