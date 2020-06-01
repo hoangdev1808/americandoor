@@ -8,9 +8,7 @@ import postcss from 'gulp-postcss';
 import cssSort from 'css-declaration-sorter';
 import autoprefixer from 'autoprefixer';
 import sourcemap from 'gulp-sourcemaps';
-import {
-	readFileSync,
-} from 'graceful-fs';
+import {readFileSync,} from 'graceful-fs';
 
 const cssCore = () => {
 	const vendors = JSON.parse(readFileSync('_vendors.json'));
