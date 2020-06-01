@@ -13,8 +13,8 @@
 	.about-left{
 		display: flex;
 		align-items: center;
-		@media(max-width: 1024px){
-			margin-bottom: 1rem;
+		@media(max-width: 1438.98px){
+			margin-bottom: 1.5625rem;
 		}
 	}
 	.about__content{
@@ -51,17 +51,19 @@
 				color: rgb(102, 102, 102);
 				line-height: 1.429;
 				text-align: left;
-				padding-bottom: 35px;
+				padding-bottom: 2.1875rem;
 			}
-			@media(max-width: 1024px){
+			@media(max-width: 1438.98px){
 				padding-left: 0;
 				p{
-					font-size: .9rem;
+					font-size: .8rem;
+					padding-bottom: 1.1rem;
 				}
 			}
 		}
 	}
 	.about__down{
+		margin-top: 1.5625rem;
 		padding-left: 2rem;
 		.download {
 			font-size: 15px;
