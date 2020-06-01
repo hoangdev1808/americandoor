@@ -61,11 +61,11 @@ function productHomeSlide(){
 			1440: {
 				slidesPerView: 4,
 			},
-			768: {
-				slidesPerView: 3,
+			1280:{
+				slidesPerView: 4,
 			},
 			575: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			}
 		},
 	})

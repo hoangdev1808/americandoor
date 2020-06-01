@@ -1,5 +1,13 @@
 .product-block{
 	padding-top: 5rem;
+	h3 {
+		font-size: 1.875rem;
+		font-family: "Inter";
+		color: rgb(51, 51, 51);
+		font-weight: bold;
+		line-height: 0.733;
+		text-align: center;
+	}
 	.product-slide{
 		position: relative;
 		.product__slide{
@@ -7,7 +15,26 @@
 				text-align: center;
 				padding: 1.25rem 0;
 				.product__img{
-					max-height: 200px;
+					position: relative;
+					width: 300px;
+					.Ellipse_6 {
+						border-radius: 50%;
+						background-color: rgb(255, 0, 0);
+						position: absolute;
+						right: 20px;
+						top: 0;
+						width: 43px;
+						height: 43px;
+						z-index: 130;
+						.New {
+							font-size: 12px;
+							font-family: "Inter";
+							color: rgb(255, 255, 255);
+							font-weight: bold;
+							line-height: 43px;
+							text-align: center;
+						}
+					}
 				}
 				figcaption{
 					.product__description{
@@ -16,23 +43,43 @@
 							padding: 1.25rem;
 							li{
 								a{
-									font-size: 1.2rem;
-									color: #333333;
-									font-weight: 700;
+									font-size: 1rem;
+									font-family: "Inter";
+									color: rgb(51, 51, 51);
+									font-weight: bold;
 									text-decoration: none;
+									line-height: 1.375;
+									text-align: center;
 								}
 								p{
-									font-size: .9rem;
+									font-size: 13px;
+									font-family: "Inter";
+									color: rgb(102, 102, 102);
+									line-height: 1.571;
+									text-align: center;
+								}
+								&:last-child{
+									p{
+										font-size: 14px;
+										color: rgb(255, 0, 0);
+									}
 								}
 							}
 						}
 						.btn__readmore{
-							color: #333333;
-							font-weight: 600;
-							
+							background-color: rgb(247, 247, 247);
+							font-size: 12px;
+							font-family: "Inter";
+							color: rgb(51, 51, 51);
+							font-weight: bold;
+							line-height: 1.2;
+							.right {
+								font-size: 15px;
+								line-height: 1.333;
+							}
 							&:hover{
-								background-color: #ff0000;
-								color: #fff;
+								background-color: rgb(255, 0, 0);
+								color: rgb(255, 255, 255);
 							}
 						}
 					}

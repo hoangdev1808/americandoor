@@ -1,6 +1,7 @@
 {
 	"fonts": [
-		"src/fonts/**"
+		"src/fonts/**",
+		"bower_components/linearicons/dist/web-font/fonts/**"
 	],
 	"js": [
 		"bower_components/jquery/dist/jquery.js",

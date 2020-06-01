@@ -2,7 +2,12 @@
 	width: 100%;
 	.block-title{
 		h3{
-			font-weight: 700;
+			font-size: 1.875rem;
+			font-family: "Inter";
+			color: rgb(51, 51, 51);
+			font-weight: bold;
+			line-height: 1.2;
+			text-align: left;
 		}
 	}
 	.about-left{
@@ -16,18 +21,20 @@
 		.about__title{
 			h5{
 				position: relative;
-				font-size: 1.3rem;
-				font-weight: 600;
+				font-size: 1.5rem;
+				font-family: "Inter";
+				color: rgb(255, 0, 0);
+				line-height: 1.2;
+				text-align: left;
 				padding-left: 2rem;
 				&::before{
-					position: absolute;
 					content: '';
+					background-color: rgb(255, 0, 0);
+					position: absolute;
+					left: 0;
+					top: 50%;
 					width: 20px;
 					height: 2px;
-					top: 50%;
-					transform: translateY(-50%);
-					left: 0;
-					background-color: #ff0000;
 				}
 				@media(max-width: 1024px){
 					font-size: 1rem;
@@ -36,11 +43,15 @@
 		}
 		.about__description{
 			padding-left: 2rem;
-			max-height: 290px;
+			max-height: 280px;
 			overflow-y: auto;
 			p{
-				color: #747474;
-				font-size: 1rem;
+				font-size: .875rem;
+				font-family: "Inter";
+				color: rgb(102, 102, 102);
+				line-height: 1.429;
+				text-align: left;
+				padding-bottom: 35px;
 			}
 			@media(max-width: 1024px){
 				padding-left: 0;
@@ -52,6 +63,16 @@
 	}
 	.about__down{
 		padding-left: 2rem;
+		.download {
+			font-size: 15px;
+			color: rgb(51, 51, 51);
+			line-height: 1.333;
+		}
+		.right {
+			font-size: 15px;
+			color: rgb(255, 255, 255);
+			line-height: 1.333;
+		}
 		@media(max-width: 1024px){
 			padding-left: 0;
 		}
@@ -79,12 +100,22 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			z-index: 2;
-			figcaption{
-				width: 100%;
+			.img{
+				width: 75px;
+				height: 75px;
+				margin: 0 auto;
+			}
+			.about__center__txt{
+				width: 130px;
+				margin-top: 1.25rem;
 				p{
 					color: #fff;
-					font-size: 1rem;
-					font-weight: 600;
+					font-size: 1.125rem;
+					font-family: "Inter";
+					color: rgb(255, 255, 255);
+					font-weight: bold;
+					line-height: 1.2;
+					text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 				}
 			}
 		}

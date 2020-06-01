@@ -25,10 +25,13 @@ header
 							a.nav-link.tt-u(href="") tuyển dụng
 						li.nav-item
 							a.nav-link.tt-u(href="") liên hệ
-						.header__search.nav-item
-							a(href="")
-								i.fas.fa-search
-						.header__language.nav-item
-							select#language(name="language")
-								option(value="vn") VN
-								option(value="en") EN
+					.header__search
+						a.search(href="")
+							span.lnr.lnr-magnifier
+					.header__language.dropdown
+						button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							|VN 
+							span.down3.lnr.lnr-chevron-down
+						.dropdown-menu(aria-labelledby='dropdownMenuButton')
+							a.dropdown-item(href='#') VN
+							a.dropdown-item(href='#') EN

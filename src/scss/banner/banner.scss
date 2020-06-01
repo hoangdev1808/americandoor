@@ -2,9 +2,10 @@
 	.slide-home{
 		position: relative;
 		.slide__img{
-			height: 100vh;
+			height: 66.85vh;
 			overflow: hidden;
 			img{
+				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
@@ -24,7 +25,11 @@
 			p{
 				font-size: 1.5rem;
 				color: #fff;
-				font-weight: 600;
+				font-weight: 400;
+				font-family: 'Inter', sans-serif;
+			}
+			.btn__readmore{
+				margin-top: 1.25rem;
 			}
 		}
 		.swiper-button-next,

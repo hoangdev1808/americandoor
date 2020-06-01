@@ -5,28 +5,25 @@
 	border: 0;
 	padding: 0;
 	&.btn__readmore{
+		background-color: rgb(255, 0, 0);
 		border-radius: 0;
-		padding: .8rem 1.2rem;
-		color: #fff;
-		margin-top: 1.25rem;
+		width: 130px;
+		height: 36px;
+		font-size: 12px;
+		font-family: "Inter";
+		color: rgb(255, 255, 255);
+		font-weight: bold;
 	}
 	&.btn__down{
-		background-color: #f5f5f5;
-		border-radius: 0;
-		padding: .75rem 1.2rem;
-		color: #333333;
-		margin-top: 1.25rem;
-		font-weight: 600;
-		border: solid 1px #cccccc;
-	}
-	&.btn-readmore__red{
-		background-color: #ff0000;
-	}
-	&.btn-readmore__gray{
-		background-color: #f5f5f5;
-	}
-	&.btn-readmore__border{
-		border: solid 1px #cccccc;
+		border: 1px solid rgb(204, 204, 204);
+		background-color: rgb(247, 247, 247);
+		width: 173px;
+		height: 36px;
+		font-size: 12px;
+		font-family: "Inter";
+		color: rgb(51, 51, 51);
+		font-weight: bold;
+		line-height: 1.2;
 	}
 	&.btn__all{
 		background-color: #f5f5f5;
@@ -40,7 +37,7 @@
 	&.btn__map{
 		background-color: #f5f5f5;
 		border-radius: 0;
-		padding: .5rem 1.2rem;
+		padding: .5rem 6.4375px;
 		color: #333333;
 		font-weight: 700;
 		font-size: 1rem;

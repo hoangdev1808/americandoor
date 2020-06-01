@@ -24,13 +24,21 @@
 			max-width: 630px;
 			z-index: 2;
 			h3{
-				font-size: 1.8rem;
-				font-weight: 700;
+				padding-top: 30px;
+				font-size: 1.875rem;
+				font-family: "Inter";
+				color: rgb(51, 51, 51);
+				font-weight: bold;
+				line-height: 0.733;
 			}
 			.ckeditor{
-				overflow-y: auto;
-				max-height: 120px;
-				padding-left: 1.25rem;
+				font-size: 14px;
+				font-family: "Inter";
+				color: rgb(102, 102, 102);
+				line-height: 1.429;
+				max-height: 80px;
+				overflow: hidden;
+				padding-left: 30px;
 			}
 		}
 	}
@@ -45,7 +53,7 @@
 			background-color: #f8f8f8;
 			.img{
 				padding: 0 1rem;
-				min-height: 230px;
+				min-height: 271px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -72,12 +80,32 @@
 		}
 		.collection__readmore{
 			margin-top: 1.25rem;
-			display: flex;
-			justify-content: center;
+			padding-left: 197px;
 			.btn__readmore{
-				color: #333333;
-				font-weight: 700;
+				border: solid 1px rgb(204, 204, 204);
+				background-color: rgb(247, 247, 247);
+				width: 158px;
+				height: 34px;
+				font-size: 12px;
+				font-family: "Inter";
+				color: rgb(51, 51, 51);
+				font-weight: bold;
+				line-height: 1.833;
+				.right {
+					font-size: 15px;
+					line-height: 1.333;
+				}
 			}
+		}
+	}
+	@media(max-width: 2000px){
+		.collection_content{
+			padding: 35px 153px;
+		}
+	}
+	@media(max-width: 1400px){
+		.collection_content{
+			padding: 35px 300px;
 		}
 	}
 	@media(max-width: 768.98px){

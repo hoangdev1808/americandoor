@@ -21,6 +21,7 @@
     "bootstrap": "^4.5.0",
     "popper.js": "^2.4.0",
     "swiper": "^5.4.1",
-    "font-awesome-5": "^5.13.0"
+    "font-awesome-5": "^5.13.0",
+    "linearicons": "^1.0.2"
   }
 }
