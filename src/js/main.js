@@ -21,12 +21,14 @@ function bannerHomeSile(){
 }
 function collectionSlide(){
 	var swiper = new Swiper('.collection-slide', {
+		slidesPerView: 4,
+		spaceBetween: 30,
 		loop: true,
 		speed: 1000,
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-		},
+		// autoplay: {
+		// 	delay: 2500,
+		// 	disableOnInteraction: false,
+		// },
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -34,25 +36,31 @@ function collectionSlide(){
 		breakpoints: {
 			1438:{
 				slidesPerView: 4,
-				spaceBetween: 30,
 			},
 			768: {
-				slidesPerView: 2,
-				spaceBetween: 15,
+				slidesPerView: 3,
+				spaceBetween: 10,
 			},
+			575:{
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			375:{
+				slidesPerView: 1,
+			}
 		},
 	})
 }
 function productHomeSlide(){
 	var swiper = new Swiper('.product__slide', {
-		slidesPerView: 1,
-		spaceBetween: 20,
+		slidesPerView: 4,
+		spaceBetween: 30,
 		loop: true,
 		speed: 1000,
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		},
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -64,8 +72,11 @@ function productHomeSlide(){
 			1280:{
 				slidesPerView: 4,
 			},
-			575: {
+			575:{
 				slidesPerView: 3,
+			},
+			375:{
+				slidesPerView: 2,
 			}
 		},
 	})
@@ -85,39 +96,35 @@ function hightlightSlide(){
 		},
 	});
 }
-function ajaxForm() {
-	$('form button card__body').on('click', function(e) {
-		e.preventDefault();
-		const url = $(this).attr('data-url');
-		const name = $('#name').val();
-		const phone = $('#phone').val();
-		const email = $('#email').val();
-		const content = $('#content').val();
-		$.ajax({
-			type: "POST",
-			url: url,
-			data: {
-				url: url,
-				name: name,
-				phone: phone,
-				email: email,
-				content: content
-			},
-			success: function(res) {
-				if (res.Code === 200) {
-					alert('Thành công');
-				} else {
-					alert('Thất bại');
-				}
-			}
-		});
+// CHECK LAYOUT CÓ BANNER
+const checkLayoutBanner = () => {
+	const mainSlider = $('.slide-home');
+const heightHeader = $('header').outerHeight();
+	if (mainSlider.length >= 1 && mainSlider.css('display') == 'block') {
+		mainSlider.css('padding-top', heightHeader);
+	} else {
+		$('main').css('padding-top', heightHeader);
+	}
+}
+
+// Search form
+function searchForm(){
+	$('header').find('.search').on('click', function(){
+		$('.search__form').slideToggle(200);
+	});
+	$(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('.search__form').slideUp();
+        }
 	});
 }
+
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	bannerHomeSile();
 	collectionSlide();
 	productHomeSlide();
 	hightlightSlide();
-	ajaxForm();
+	checkLayoutBanner();
+	searchForm();
 });

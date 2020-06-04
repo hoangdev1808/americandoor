@@ -1,58 +1,70 @@
+.Rectangle_71{
+	height: 600px;
+	@media(max-width: 575.98px){
+		height: 400px;
+	}
+}
 .customer-design{
 	position: relative;
-	min-height: 550px;
+	max-width: 1920px;
+	height: 100%;
 	background-image: url('../assets/images/design-bg.png');
-	background-size: cover;
 	background-repeat: no-repeat;
-	display: flex;
-	align-items: center;
+	background-size: cover;
+	background-position: center;
+	padding-top: 190px;
 	.customer__card{
-		width: 530px;
-		@media(max-width: 768.98px){
+		@media(max-width: 575.98px){
+			margin: auto 0;
 			width: 100%;
 			.block-card{
+				width: 100%;
 				padding: 20px;
-				.card__title{
-					h5{
-						font-size: 1rem;
-					}
-				}
-				.card__body{
-					h3{
-						font-size: 1.8rem;
-					}
-				}
 			}
 		}
 	}
+	@media(max-width: 575.98px){
+		padding-top: 150px;
+	}
 	.block-card{
+		width: 490px;
+		height: 250px;
 		position: relative;
 		padding: 40px;
-		background-color: rgba($color: #4e433d, $alpha: .7);
+		background-color: rgba($color: rgb(91, 78, 69), $alpha: .7);
 		.card__title{
 			h5{
-				font-size: 1.3rem;
-				color: #fff;
+				font-size: 16px;
+				font-family: "Inter";
+				color: rgb(255, 255, 255);
+				text-transform: uppercase;
 			}
 		}
 		.card__body{
 			h3{
-				font-size: 2.2rem;
-				font-weight: 400;
-				color: #fff;
+				font-size: 30px;
+				font-family: "Inter";
+				color: rgb(255, 255, 255);
 			}
 			.btn__readmore{
-				color: #333333;
-				font-weight: 700;
-				svg[fill]{
-					margin-left: 20px;
-				}
+				border: 1px solid rgb(204, 204, 204);
+				background-color: rgb(247, 247, 247);
+				font-size: 12px;
+				font-family: "Inter";
+				color: rgb(51, 51, 51);
+				font-weight: bold;
+				line-height: 1.2;
+				width: 220px;
+				height: 36px;
+				margin-top: 22px;
 				&:hover{
 					color: #fff;
-					background-color: #e0232a;
-				
-					svg[fill]{
-						background-color: #fff;
+					background-color: rgb(237, 28, 36);
+					opacity: 0.902;
+					span{
+						svg{
+							fill: #fff;
+						}
 					}
 				}
 			}
@@ -101,8 +113,5 @@
 			transition-duration: 0.4s;
 		}
 		
-	}
-	@media(max-width: 768.98px){
-		min-height: 350px;
 	}
 }

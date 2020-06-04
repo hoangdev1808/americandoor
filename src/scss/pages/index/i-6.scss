@@ -2,6 +2,16 @@
 	.list-group{
 		max-width: 1020px;
 		margin: 0 auto;
+		.block-title{
+			h3{
+				font-size: 30px;
+				font-family: "Inter";
+				color: rgb(51, 51, 51);
+				font-weight: bold;
+				line-height: 0.733;
+				text-align: center;
+			}
+		}
 		.list__item{
 			border: solid 1px #cccccc;
 			min-height: 160px;

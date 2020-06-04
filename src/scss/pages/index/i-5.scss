@@ -26,8 +26,16 @@
 				}
 			}
 			.btn__map{
+				opacity: 0.902;
+				width: 280px;
+				height: 36px;
+				font-size: 12px;
+				font-family: "Inter";
+				color: rgb(51, 51, 51);
+				font-weight: bold;
+				text-transform: uppercase;
 				&:hover{
-					background-color: #e0232a;
+					background-color: rgb(237, 28, 36);
 					color: #fff;
 				}
 			}

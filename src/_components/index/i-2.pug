@@ -1,20 +1,23 @@
-section.block-section
-	.collection-block
-		.bg
-			.Rectangle_673_copy
-				img(src="./assets/images/collection-big.png", alt="")
-		.Rectangle_673
-			.American_doors
-				h3 Bộ sưu tập Sản phẩm American Door
-				p American doors là thương hiệu hàng đầu trong trong việc kết hợp những vật liệu tối ưu như hóa keo, chất dẻo kết dính, cùng sự phát triển của trang thiết bị sản xuất tiên tiến, công nghệ sản xuất gỗ hiện đại và chuyên nghiệp với một số ít chủng loại gỗ để tạo ra sản phẩm gỗ chắc và bền hơn nhiều so với vật liệu gỗ truyền thống...
-			.swiper-container.collection-slide
-				.swiper-wrapper
-					-for(i=1; i<5; i++)
-						.swiper-slide
-							.Rectangle_64
-								img(src="./assets/images/collection-0"+i+".png", alt="")
-								.Rectangle__name
-									a(href="") Cửa gỗ
-				.swiper-button-next
-			a.btn.btn__readmore(href="") xem thêm
-				span.ml-2.right.lnr.lnr-chevron-right
+section.block-section.p-t-80
+	.rectangle-block
+		.rectangle__bg
+			.bg.hover-style-2
+				.img
+					img(src="./assets/images/collection-big.png", alt="")
+		.rectangle__content
+			.rectangle_description
+				.american_doors
+					.block-title
+						h3 Bộ sưu tập Sản phẩm American Door
+					p American doors là thương hiệu hàng đầu trong trong việc kết hợp những vật liệu tối ưu như hóa keo, chất dẻo kết dính, cùng sự phát triển của trang thiết bị sản xuất tiên tiến, công nghệ sản xuất gỗ hiện đại và chuyên nghiệp với một số ít chủng loại gỗ để tạo ra sản phẩm gỗ chắc và bền hơn nhiều so với vật liệu gỗ truyền thống...
+				.swiper-container.collection-slide
+					.swiper-wrapper
+						-for(i=1; i<5; i++)
+							.swiper-slide
+								.rectangle_64
+									img(src="./assets/images/collection-0"+i+".png", alt="")
+									.rectangle__name
+										a(href="") Cửa gỗ
+					.swiper-button-next
+				a.btn.btn__readmore(href="") xem thêm
+					span.ml-2.right.lnr.lnr-chevron-right

@@ -1,5 +1,4 @@
 .product-block{
-	padding-top: 5rem;
 	h3 {
 		font-size: 1.875rem;
 		font-family: "Inter";
@@ -16,7 +15,6 @@
 				padding: 1.25rem 0;
 				.product__img{
 					position: relative;
-					width: 300px;
 					.Ellipse_6 {
 						border-radius: 50%;
 						background-color: rgb(255, 0, 0);
@@ -50,6 +48,9 @@
 									text-decoration: none;
 									line-height: 1.375;
 									text-align: center;
+									@media(max-width: 1024px){
+										font-size: .7rem;
+									}
 								}
 								p{
 									font-size: 13px;
@@ -57,6 +58,9 @@
 									color: rgb(102, 102, 102);
 									line-height: 1.571;
 									text-align: center;
+									@media(max-width: 1024px){
+										font-size: 11px;
+									}
 								}
 								&:last-child{
 									p{
@@ -88,6 +92,9 @@
 				&:hover{
 					background-color: rgb(248, 248, 248);
 				}
+				@media(max-width: 768px){
+					padding: .8rem;
+				}
 			}
 		}
 		.swiper-button-next,
@@ -100,7 +107,7 @@
 			}
 		}
 		.swiper-button-next{
-			right: -45px;
+			right: 0;
 			&::after{
 				content: '';
 				width: 100%;
@@ -110,7 +117,7 @@
 			}
 		}
 		.swiper-button-prev{
-			left: -45px;
+			left: 0;
 			&::after{
 				content: '';
 				width: 100%;
@@ -121,7 +128,6 @@
 		}
 	}
 	@media(max-width: 768.98px){
-		padding: 0;
 		.block-title{
 			margin-bottom: 1.5rem !important;
 		}

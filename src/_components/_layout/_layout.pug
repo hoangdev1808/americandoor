@@ -8,7 +8,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Inter")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap")
 		link(rel='stylesheet', href='https://cdn.linearicons.com/free/1.0.0/icon-font.min.css')
 		link(rel="stylesheet", href="./css/core.min.css")
 		link(rel="stylesheet", href="./css/main.min.css")
@@ -21,16 +21,25 @@ html(lang="en")
 				span#progstat 0
 				| %
 			#progress
-		//- Header block start
-		block header
-			include _header.pug
-		main
-			block banner,breadcrumb
-			block main
-			#js-page-verify(class=bodyClass hidden)
-		block footer
-			include _footer.pug
-			include _feedback
+		form(action="" method="")
+			#wrapper
+				<!--Header-->
+				block header
+					include _header.pug
+				<!--End Header-->
+
+				<!--Main-->
+				main
+					block banner,breadcrumb
+					block main
+					#js-page-verify(class=bodyClass hidden)
+				<!--End Main-->
+
+				<!--Footer-->
+				block footer
+					include _footer.pug
+				<!--End Footer-->
+					include _feedback
 		script(type="text/javascript", src="./js/core.min.js")
 		script(type="text/javascript", src="./js/main.min.js")
 		block scripts

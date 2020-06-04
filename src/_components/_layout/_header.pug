@@ -8,7 +8,8 @@ header
 						.bar
 						.bar
 				.nav-brand
-					img.logo(src="./assets/images/logo.png", alt="")
+					a(href="index.html")
+						img.logo(src="./assets/images/logo.png", alt="")
 				.collapse.navbar-collapse#navbarSupportedContent
 					ul.navbar-nav
 						li.nav-item
@@ -25,13 +26,18 @@ header
 							a.nav-link.tt-u(href="") tuyển dụng
 						li.nav-item
 							a.nav-link.tt-u(href="") liên hệ
-					.header__search
-						a.search(href="")
-							span.lnr.lnr-magnifier
-					.header__language.dropdown
-						button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-							|VN 
-							span.down3.lnr.lnr-chevron-down
-						.dropdown-menu(aria-labelledby='dropdownMenuButton')
-							a.dropdown-item(href='#') VN
-							a.dropdown-item(href='#') EN
+				.header__search
+					.search
+						span.lnr.lnr-magnifier
+					.search__form
+						.form-group
+							input.form-control(type="text" placeholder= "Tìm Kiếm...")
+							button.btn.btn__search
+								span.lnr.lnr-magnifier
+				.header__language.dropdown
+					button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						|VN 
+						span.down3.lnr.lnr-chevron-down
+					.dropdown-menu(aria-labelledby='dropdownMenuButton')
+						a.dropdown-item(href='#') VN
+						a.dropdown-item(href='#') EN

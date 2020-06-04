@@ -1,5 +1,5 @@
 header{
-	position: relative;
+	position: fixed;
 	float: left;
 	width: 100%;
 	z-index: 99;
@@ -12,6 +12,9 @@ header{
 			.nav-brand{
 				width: 170px;
 				padding: .5rem 0;
+				@media(max-width: 991.98px){
+					width: 100px !important;
+				}
 			}
 			.navbar-toggler{
 				.navbar-toggler-icon{
@@ -32,7 +35,7 @@ header{
 				.nav-item{
 					margin-left: auto;
 					.nav-link{
-						font-size: 1rem;
+						font-size: 1rem !important;
 						font-weight: 600;
 						position: relative;
 						font-family: "Inter";
@@ -51,55 +54,24 @@ header{
 							transition: .3s all ease-in-out;
 						}
 					}
-					@media(min-width: 1024px){
-						padding: 15px 0;
-						&:hover{
-							.nav-link{
-								color: #ff0000;
-								&::after{
-									width: 100%;
-								}
+					@media(max-width: 1024px){
+						padding: 5px 0;
+						margin-left: 0;
+						.nav-link{
+							font-size: .8rem;
+						}
+					}
+					&:hover{
+						.nav-link{
+							color: #ff0000;
+							&::after{
+								width: 100%;
 							}
 						}
 					}
 				}
 			}
-			.header__search{
-				margin-left: 30px;
-				.search {
-					font-size: 18px;
-					font-family: "Linearicons";
-					color: rgb(167, 176, 184);
-					line-height: 1.2;
-					text-align: center;
-					text-decoration: none;
-					z-index: 314;
-				}
-			}
-			
-			.header__language{
-				margin-left: 15px;
-				.dropdown-toggle{
-					border: none;
-					background: none;
-					&::after{
-						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
-						content: '';
-						border: none;
-					}
-					.down3 {
-						font-size: 12px;
-						color: rgb(167, 176, 184);
-					}
-				}
-				button:focus{
-					outline: none;
-					color: #b3bac1;
-				}
-			}
-			@media(max-width: 768.98px){
+			@media(max-width: 991.98px){
 				.nav-brand{
 					margin: 0 auto;
 					width: 150px;
