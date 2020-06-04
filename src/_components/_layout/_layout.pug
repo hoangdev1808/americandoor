@@ -13,14 +13,16 @@ html(lang="en")
 		link(rel="stylesheet", href="./css/core.min.css")
 		link(rel="stylesheet", href="./css/main.min.css")
 	body
-		#fb-root
-		#loading
-			.logo-loader
-				img(src="./assets/loading.gif")
-			.progstat-wrapper.d-none Loading:
-				span#progstat 0
-				| %
-			#progress
+		#loading-container
+			.loading-wrapper
+				#loading-logo
+					img(src="./assets/images/logo.png")
+				.progress
+					#progress-bar
+				.progress-status
+					| Loading: 
+					span#progress-percentage 0
+					| %
 		form(action="" method="")
 			#wrapper
 				<!--Header-->
