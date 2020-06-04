@@ -77,6 +77,9 @@
 							transform: translateX(-50%);
 							z-index: 207;
 						}
+						@media(max-width: 575.98px){
+							width: unset;
+						}
 					}
 					.swiper-button-next{
 						display: none;

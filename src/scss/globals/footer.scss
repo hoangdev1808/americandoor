@@ -10,12 +10,16 @@ footer{
 			.card__title{
 				margin-bottom: 1.25rem;
 				h3{
-					font-size: 1.3rem;
+					font-size: 1rem;
 					font-weight: 600;
 					color: #4d4d4d;
+
 				}
 			}
 			.card__body{
+				p{
+					font-size: .875rem;
+				}
 				ul{
 					padding: 0;
 					list-style: none;
@@ -28,11 +32,11 @@ footer{
 							font-size: 1rem;
 						}
 						p{
-							font-size: 1rem;
+							font-size: .875rem;
 							color: #4d4d4d;
 						}
 						a{
-							font-size: 1rem;
+							font-size: .875rem;
 							color: #4d4d4d;
 						}
 					}
@@ -78,13 +82,13 @@ footer{
 			}
 		}
 		@media(max-width: 768.98px){
-			padding: 1.5rem 0;
+			padding: 1rem 0;
 		}
 	}
 	.copyright{
 		width: 100%;
 		background-color: #a7b0b8;
-		padding: 1.25rem 0;
+		padding: 1rem .5rem;
 		text-align: center;
 		ul{
 			padding: 0;
@@ -109,6 +113,7 @@ footer{
 				a{
 					color: #fff;
 					font-weight: 600;
+					font-size: .9rem;
 				}
 				&:last-child{
 					&::after{
@@ -119,8 +124,8 @@ footer{
 		}
 		p{
 			color: #fff;
-			font-size: 1rem;
 			font-weight: 600;
+			font-size: .9rem;
 		}
 	}
 }

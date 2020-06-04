@@ -43,7 +43,6 @@
 		}
 		.about__description{
 			padding-left: 2rem;
-			max-height: 280px;
 			overflow: hidden;
 			p{
 				font-size: .875rem;
@@ -52,6 +51,9 @@
 				line-height: 1.429;
 				text-align: left;
 				padding-bottom: 2.1875rem;
+				&:last-child{
+					padding-bottom: 0;
+				}
 			}
 			@media(max-width: 1438.98px){
 				padding-left: 0;
@@ -63,7 +65,7 @@
 		}
 	}
 	.about__down{
-		margin-top: 1.5625rem;
+		margin-top: 1.25rem;
 		padding-left: 2rem;
 		.download {
 			font-size: 15px;

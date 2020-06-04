@@ -22,7 +22,6 @@ function bannerHomeSile(){
 function collectionSlide(){
 	var swiper = new Swiper('.collection-slide', {
 		slidesPerView: 4,
-		spaceBetween: 30,
 		loop: true,
 		speed: 1000,
 		// autoplay: {
@@ -36,17 +35,17 @@ function collectionSlide(){
 		breakpoints: {
 			1438:{
 				slidesPerView: 4,
+				spaceBetween: 20,
 			},
 			768: {
 				slidesPerView: 3,
-				spaceBetween: 10,
 			},
 			575:{
 				slidesPerView: 3,
-				spaceBetween: 10,
 			},
 			375:{
-				slidesPerView: 1,
+				slidesPerView: 2,
+				spaceBetween: 0,
 			}
 		},
 	})

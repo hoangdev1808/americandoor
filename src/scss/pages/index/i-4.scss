@@ -163,14 +163,14 @@
 		}
 	}
 	@media(max-width: 768.98px){
-		padding: 1rem;
+		padding: 1rem 0;
 		.hightlight-description{
 			.block-title{
 				margin-bottom: 1rem !important;
 			}
 			.hightlight__content{
 				padding: 0;
-				max-height: 170px;
+				max-height: 200px;
 				overflow-y: auto;
 			}
 		}

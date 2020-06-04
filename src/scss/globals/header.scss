@@ -73,7 +73,10 @@ header{
 			}
 			@media(max-width: 991.98px){
 				.nav-brand{
-					margin: 0 auto;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
 					width: 150px;
 				}
 				.navbar-nav{
