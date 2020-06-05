@@ -92,6 +92,7 @@
 
 .hover-style-2 {
 	.img {
+		height: 100%;
 		position: relative;
 
 		&:before {
@@ -252,7 +253,7 @@
 		}
 
 		h3 {
-			font-size: 18px !important;
+			font-size: 1.5rem !important;
 		}
 
 		p {
