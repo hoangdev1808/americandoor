@@ -5,7 +5,6 @@ import {
 import rename from "gulp-rename";
 import plumber from "gulp-plumber";
 import babel from "gulp-babel";
-import babelify from "babelify";
 import uglify from "gulp-uglify";
 import uglifyES from "gulp-uglify-es";
 import browserify from "browserify";
@@ -20,14 +19,6 @@ const jsTask = () => {
 			debug: true,
 			sourceMaps: true
 		})
-		// .transform(babelify.configure({
-		// 	presets: ["@babel/preset-env"],
-		// 	plugins: [
-		// 		'@babel/plugin-proposal-class-properties',
-		// 		'@babel/plugin-transform-async-to-generator',
-		// 	],
-		// 	extensions: ['.js']
-		// }))
 		.bundle()
 		.pipe(source('main.js'))
 		.pipe(buffer())
