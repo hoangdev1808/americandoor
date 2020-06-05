@@ -38,7 +38,7 @@ const cssTask = () => {
 			suffix: '.min',
 		}))
 		.pipe(sourcemap.write('.'))
-		.pipe(dest('_dist/css'))
+		.pipe(dest('dist/css'))
 };
 
 module.exports = {

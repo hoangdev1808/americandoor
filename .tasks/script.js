@@ -20,14 +20,14 @@ const jsTask = () => {
 			debug: true,
 			sourceMaps: true
 		})
-		.transform(babelify.configure({
-			presets: ["@babel/preset-env"],
-			plugins: [
-				'@babel/plugin-proposal-class-properties',
-				'@babel/plugin-transform-async-to-generator',
-			],
-			extensions: ['.js']
-		}))
+		// .transform(babelify.configure({
+		// 	presets: ["@babel/preset-env"],
+		// 	plugins: [
+		// 		'@babel/plugin-proposal-class-properties',
+		// 		'@babel/plugin-transform-async-to-generator',
+		// 	],
+		// 	extensions: ['.js']
+		// }))
 		.bundle()
 		.pipe(source('main.js'))
 		.pipe(buffer())
@@ -43,7 +43,7 @@ const jsTask = () => {
 			suffix: ".min"
 		}))
 		.pipe(sourcemap.write('.'))
-		.pipe(dest('_dist/js'));
+		.pipe(dest('dist/js'));
 };
 
 const jsTask2 = () => {
@@ -64,7 +64,7 @@ const jsTask2 = () => {
 			suffix: ".min"
 		}))
 		.pipe(sourcemap.write('.'))
-		.pipe(dest('_dist/js'));
+		.pipe(dest('dist/js'));
 }
 
 module.exports = {

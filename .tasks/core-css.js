@@ -3,6 +3,7 @@ import {
 	dest,
 } from 'gulp';
 import concat from 'gulp-concat';
+import sass from 'gulp-sass';
 import cleanCSS from 'gulp-clean-css';
 import postcss from 'gulp-postcss';
 import cssSort from 'css-declaration-sorter';
@@ -30,7 +31,7 @@ const cssCore = () => {
 			compatibility: 'ie9'
 		}))
 		.pipe(sourcemap.write('.'))
-		.pipe(dest('_dist/css'))
+		.pipe(dest('dist/css'))
 };
 
 module.exports = {

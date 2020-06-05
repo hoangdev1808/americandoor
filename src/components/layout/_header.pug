@@ -1,7 +1,7 @@
 header
 	.block-header
-		.container
-			nav.navbar.navbar-expand-lg
+		nav.navbar.navbar-expand-lg
+			.container
 				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent')
 					span.navbar-toggler-icon
 						.bar
@@ -10,7 +10,8 @@ header
 				.nav-brand
 					a(href="index.html")
 						img.logo(src="./assets/images/logo.png", alt="")
-				.collapse.navbar-collapse#navbarSupportedContent
+
+				#navbarSupportedContent.collapse.navbar-collapse
 					ul.navbar-nav
 						li.nav-item
 							a.nav-link.tt-u(href="") giới thiệu
@@ -26,6 +27,7 @@ header
 							a.nav-link.tt-u(href="") tuyển dụng
 						li.nav-item
 							a.nav-link.tt-u(href="") liên hệ
+
 				.header__search
 					.search
 						span.lnr.lnr-magnifier

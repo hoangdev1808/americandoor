@@ -31,7 +31,7 @@ const server = () => {
 	bSync.init({
 		notify: true,
 		server: {
-			baseDir: "_dist",
+			baseDir: "dist",
 		},
 		port: 8000
 	})
@@ -48,7 +48,7 @@ const server = () => {
 
 	watch([
 		"src/**.pug",
-		"src/_components/**/**.pug"
+		"src/components/**/**.pug"
 	], series(pugTask));
 
 	watch([
@@ -67,7 +67,7 @@ const server = () => {
 	], parallel(jsCore, cssCore));
 
 	watch([
-		"_dist"
+		"dist"
 	]).on("change", bSync.reload);
 }
 

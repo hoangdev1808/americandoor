@@ -21,7 +21,7 @@ const jsCore = () => {
 		.pipe(strip())
 		.pipe(uglify())
 		.pipe(sourcemap.write('.'))
-		.pipe(dest('_dist/js'))
+		.pipe(dest('dist/js'))
 };
 
 module.exports = {

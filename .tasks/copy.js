@@ -8,7 +8,7 @@ import {
 
 const copyAssets = () => {
 	return src("src/assets/**/**.{svg,png,jpg,jpeg,gif,mp4}")
-		.pipe(dest("_dist/assets"))
+		.pipe(dest("dist/assets"))
 };
 
 const copyFonts = () => {
@@ -17,7 +17,7 @@ const copyFonts = () => {
 	return src(fonts, {
 			allowEmpty: true
 		})
-		.pipe(dest("_dist/fonts"));
+		.pipe(dest("dist/fonts"));
 };
 
 module.exports = {

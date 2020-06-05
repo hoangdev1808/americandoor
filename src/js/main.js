@@ -1,5 +1,4 @@
-import "@babel/polyfill";
-import Loading from "./lib/Loading";
+const Loading = require('./lib/Loading')
 function bannerHomeSile(){
 	var mySwiper = new Swiper('.slide-home', {
 		spaceBetween: 30,
@@ -43,7 +42,7 @@ function collectionSlide(){
 			575:{
 				slidesPerView: 3,
 			},
-			375:{
+			320:{
 				slidesPerView: 2,
 				spaceBetween: 0,
 			}
@@ -73,9 +72,11 @@ function productHomeSlide(){
 			},
 			575:{
 				slidesPerView: 3,
+				spaceBetween: 20,
 			},
-			375:{
-				slidesPerView: 2,
+			320:{
+				slidesPerView: 1,
+				spaceBetween: 0,
 			}
 		},
 	})

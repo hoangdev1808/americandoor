@@ -38,6 +38,9 @@
 					background-color: rgb(237, 28, 36);
 					color: #fff;
 				}
+				@media(max-width: 320px){
+					width: 225px;
+				}
 			}
 			@media(max-width: 1024.98px){
 				padding: 30px;

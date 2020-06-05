@@ -1,11 +1,11 @@
 import del from 'del';
 
 const cleanDist = () => {
-	return del('_dist')
+	return del('dist')
 };
 
 const cleanAssets = () => {
-	return del('_dist/assets')
+	return del('dist/assets')
 };
 
 module.exports = {

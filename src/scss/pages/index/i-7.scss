@@ -3,6 +3,9 @@
 	@media(max-width: 575.98px){
 		height: 400px;
 	}
+	@media(max-width: 375.98px){
+		height: unset;
+	}
 }
 .customer-design{
 	position: relative;
@@ -24,7 +27,11 @@
 		}
 	}
 	@media(max-width: 575.98px){
-		padding-top: 150px;
+		padding-top: 105px;
+	}
+	@media(max-width: 375.98px){
+		background-image: none;
+		padding-top: 0;
 	}
 	.block-card{
 		width: 490px;
